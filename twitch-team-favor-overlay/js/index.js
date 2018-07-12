@@ -1,9 +1,9 @@
 setInterval(function () {
-  axios.get('http://localhost:4567/api/v1/gameid')
+  axios.get('https://powerful-gorge-93867.herokuapp.com/api/v1/gameid')
     .then(function (response) {
       game_info = response.data;
       blueWidth = 0;
-      axios.get('http://localhost:4567/api/v1/teamvotes/' + game_info.game_id)
+      axios.get('https://powerful-gorge-93867.herokuapp.com/api/v1/teamvotes/' + game_info.game_id)
         .then(function (teamresponse) {
           teamvotes = teamresponse.data;
           b_tally = [];

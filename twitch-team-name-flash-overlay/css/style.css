@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css?family=Racing+Sans+One');
+
+#container {
+  display: inline-block;
+  background-image: url('https://cdn.discordapp.com/attachments/463393093505384448/463813677053771796/mdintermission90.png');
+  background-color: purple;
+  height: 140px;
+  transform: translateX(-1000px) scale(0.7);
+  border-radius: 10px;  
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+#container.enable {
+  animation: flash 5s ease;
+}
+@keyframes flash {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  45% {
+    transform: translateX(400px);
+  }
+  55% {
+    transform: translateX(400px);
+  }
+  70% {
+    opacity: 1;
+  }
+    100% {
+      transform: translateX(2000px)scale(0.7);
+      opacity: 0;
+  }
+}
+h1 {
+  color: white;
+  line-height: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  font-size: 75px;
+  font-family: 'Racing Sans One', cursive;
+}
